@@ -51,7 +51,7 @@ function moveDown() {
 
 
 function fireBullet() {
-  let bullet = createLaserElement()
+  let bullet = createBulletElement()
   mainPlayArea.appendChild(bullet)
   let bulletSFX = new Audio('audio/AAsounds.mov')
   bulletSFX.play()
@@ -59,7 +59,7 @@ function fireBullet() {
 }
 
 
-function createLaserElement() {
+function createBulletElement() {
   let xPosition = parseInt(window.getComputedStyle(shooter).getPropertyValue('left'))
   let yPosition = parseInt(window.getComputedStyle(shooter).getPropertyValue('top'))
   let newBullet = document.createElement('img')
@@ -83,10 +83,11 @@ function moveBullet(bullet) {
         scoreCounter.innerText = parseInt(scoreCounter.innerText) + 100
       }
     })
-    if (xPosition === 580) {
+    if (xPosition === 540) {
       bullet.remove()
     } else {
       bullet.style.left = `${xPosition + 4}px`
+      console.log(xPosition)
     }
   }, 10)
 }
@@ -98,7 +99,7 @@ function createPlane() {
   newPlane.src = planeSpriteImg
   newPlane.classList.add('plane')
   newPlane.classList.add('plane-transition')
-  newPlane.style.left = '610px'
+  newPlane.style.left = '570px'
   newPlane.style.top = `${Math.floor(Math.random() * 330) + 30}px`
   mainPlayArea.appendChild(newPlane)
   movePlane(newPlane)
