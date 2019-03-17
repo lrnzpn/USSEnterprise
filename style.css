@@ -1,0 +1,70 @@
+#main-play-area {
+    width: 600px;
+    height: 400px;
+    background-image: url('images/ocean.png');
+
+    border: 5px solid black;
+    -webkit-animation: animatedBackground 120s linear infinite;
+    background-repeat: repeat-x;
+}
+
+@-webkit-keyframes animatedBackground {
+    from { background-position: 1000px 0; }
+    to { background-position: 0 0; }
+}
+
+#instructions-text {
+    position: relative;
+    color: white;
+    left: 150px;
+    top: 0px;
+    text-shadow: 2px 2px black;
+}
+
+#start-button {
+    position: relative;
+    color: white;
+    left: 250px;
+    top: 80px;
+    text-shadow: 2px 2px black;
+}
+
+#start-button:hover {
+    cursor: pointer;
+}
+
+#player-controlled-shooter {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 20px;
+    top: 180px;
+}
+
+.bullet {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.plane {
+     width: 30px;
+     height: 30px;
+    position: absolute;
+     border-radius: 50%;
+     background-color: rgba(230,230,230, 0.1);
+     box-shadow: 0 0 3px 3px rgba(230,230,230,0.2);
+}
+
+.plane-transition {
+    opacity: 1;
+    transition: opacity 1.5s ease-out;
+}
+
+
+.dead-plane {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    opacity: 0;
+}
