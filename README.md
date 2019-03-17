@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # USSEnterprise
 
 To play the game, move with the Up and Down arrow keys. Spacebar to fire bullets.
