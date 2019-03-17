@@ -87,7 +87,6 @@ function moveBullet(bullet) {
       bullet.remove()
     } else {
       bullet.style.left = `${xPosition + 4}px`
-      console.log(xPosition)
     }
   }, 10)
 }
