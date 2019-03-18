@@ -5,19 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <title>Enterprise</title>
 </head>
 <body>
-  <div id='main-play-area'>
+  <div class="container-row">
+      <div class="container-col">
+          <div id='main-play-area'>
+              <img id='player-controlled-shooter' src="images/carrier.png">
+              <h4 id="instructions-text">Defend the fleet, destroy the Kamikazee pilots!</h4>
+              <div id="start-button">
+                <h1>START</h1>
+              </div> 
+            </div>
+          
+            <div id="score"><h2>Score: <span>0</span></h2></div>
+      </div>
+    
+      <div class="container-col">
+        <div id="infotext">
+            <h1>The USS Enterprise</h1>
+            <hr>
+            <p>
+              <img id="enterprise" src="images/OG_USS_Enterprise.jpg" alt="USS Enterprise">
+              <br>
 
-    <img id='player-controlled-shooter' src="images/carrier.png">
-    <h4 id="instructions-text">Defend the fleet, destroy the Kamikazee pilots!</h4>
-    <div id="start-button">
-      <h1>START</h1>
-    </div> 
+              In its Dedicatory plaque, at the Enterprise Tower, U.S. Naval Academy, here
+              it is written that it is "The carrier that fought the most through the entire war...".
+              <br><br>
+              The <em>USS Enterprise</em> joined the war on December 7, 1941, after Japanese planes bombed Pearl Harbor.
+              Among the major engagements that occured in the Pacific, the Enterprise went through all except 2.
+              <br><br>
+              On May 14, 1945, a Kamikaze attack managed to criple the Enterprise, forcing it to leave the war.
+              As the ship managed to down numerous planes and ships, it then became known as the <br>
+              <h3 style="text-align: center;"><em>"The most decorated ship of the Second World War</em>".</h3>
+              <p>Ultimately, the presence of the Enterprise, especially in the Pacific Sea 
+                and the events that surrounded the Philippines truly helped shaped the future of the country and the world.</p>
+
+              <p style="font-size: 10px;"><i>Source from <a href="www.cv6.org">cv6.org</a>.</i><br></p>
+              <p style="font-size: 12px;">Click here to see more picture of the Enterprise from 
+              <a href="https://www.businessinsider.com/wild-photos-of-uss-enterprise-most-decorated-wwii-aircraft-carrier-2018-9">businessinsider</a>!</p>
+            </p>
+        </div>
+        
+      </div>
   </div>
-
-  <div id="score"><h2>Score: <span>0</span></h2></div>
+  
 
 <script type="text/javascript" src="index.js"></script>
 </body>
