@@ -76,7 +76,7 @@ function moveBullet(bullet) {
     let xPosition = parseInt(bullet.style.left)
     let planes = document.querySelectorAll(".plane")
     planes.forEach(plane => {
-      if (checkLaserCollision(bullet, plane)) {
+      if (checkBulletCollision(bullet, plane)) {
         plane.src = "images/explosion.png"
         plane.classList.remove("plane")
         plane.classList.add("dead-plane")
@@ -120,7 +120,7 @@ function movePlane(plane) {
 }
 
 
-function checkLaserCollision(bullet, plane) {
+function checkBulletCollision(bullet, plane) {
   let bulletLeft = parseInt(bullet.style.left)
   let bulletTop = parseInt(bullet.style.top)
 //   let bulletBottom = bulletTop - 20
