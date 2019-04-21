@@ -8,7 +8,7 @@ permalink: /index.html
 - PS: This game has real Anti-Aircraft audio when the bullet fires, it might be loud.
 - PPS: It might be buggy due to the JavaScript. :/
 
-- Play here at https://miggypinaroc.github.io/USSEnterprise/
+- Play here at https://lrnzpn.github.io/USSEnterprise/
 
 
 
